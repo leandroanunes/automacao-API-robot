@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0.1 (Python 3.10.7 on win32)" generated="20230604 20:33:14.439" rpa="false" schemaversion="3">
+<suite id="s1" name="teste API" source="C:\Users\leand\Documents\leandro\automacao-API-robot\tests\teste_API.robot">
+<test id="s1-t1" name="CT001 - Cadastrar um usuario novo com sucesso na ServeRest" line="9">
+<kw name="criar um ${emailAleatorio}" library="Teste-API_KW" sourcename="criar um ${email}">
+<kw name="Generate Random String" library="String">
+<var>${palavra_aleatoria}</var>
+<arg>length=4</arg>
+<arg>chars=[letters]</arg>
+<doc>Generates a string with a desired ``length`` from the given ``chars``.</doc>
+<msg timestamp="20230604 20:33:15.121" level="INFO">${palavra_aleatoria} = etse</msg>
+<status status="PASS" starttime="20230604 20:33:15.121" endtime="20230604 20:33:15.121"/>
+</kw>
+<kw name="Set Test Variable" library="BuiltIn">
+<arg>${email}</arg>
+<arg>${palavra_aleatoria}@emailteste.com</arg>
+<doc>Makes a variable available everywhere within the scope of the current test.</doc>
+<msg timestamp="20230604 20:33:15.124" level="INFO">${email} = etse@emailteste.com</msg>
+<status status="PASS" starttime="20230604 20:33:15.123" endtime="20230604 20:33:15.124"/>
+</kw>
+<kw name="Log To Console" library="BuiltIn">
+<arg>email aleatorio: ${email}</arg>
+<doc>Logs the given message to the console.</doc>
+<status status="PASS" starttime="20230604 20:33:15.125" endtime="20230604 20:33:15.127"/>
+</kw>
+<status status="PASS" starttime="20230604 20:33:15.119" endtime="20230604 20:33:15.127"/>
+</kw>
+<status status="PASS" starttime="20230604 20:33:15.117" endtime="20230604 20:33:15.129"/>
+</test>
+<status status="PASS" starttime="20230604 20:33:14.443" endtime="20230604 20:33:15.142"/>
+</suite>
+<statistics>
+<total>
+<stat pass="1" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="1" fail="0" skip="0" id="s1" name="teste API">teste API</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
