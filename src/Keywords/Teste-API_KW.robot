@@ -1,7 +1,8 @@
 *** Settings ***
 Library          requests
 Library          String
-Library    XML
+Library          RequestsLibrary
+Library          XML
 
 *** Keywords ***
 
@@ -17,5 +18,5 @@ cadastrar o ${email} na API
     ...    password=123senha   
     ...    administrador=${True}
 
-criar sessao para a ServeRest
-    Session
+criar sessao para a ServeRest    
+    Create Session    alias=ServeRest    url
